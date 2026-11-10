@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Junot | Personal Portfolio</title>
+
+    <style>
+      html { scroll-behavior: smooth; }
+      body { padding-top: 56px; color: #1f2937; }
+      section { padding: 5rem 0; scroll-margin-top: 56px; }
+      .bg-soft { background-color: #f3f6fb; }
+      .accent { color: #0d6efd; }
+
+      /* Hero */
+      #home {
+        background: linear-gradient(135deg, #0b1f3a 0%, #14407a 100%);
+        color: #fff;
+        padding: 6rem 0;
+      }
+      .hero-img {
+        width: 100%;
+        max-width: 380px;
+        height: auto;
+         border-radius: 1.5rem;
+         border: 6px solid rgba(255, 255, 255, 0.85);
+      }
+
+      .section-title { font-weight: 700; margin-bottom: 2.5rem; }
+      .section-title::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 4px;
+        background: #0d6efd;
+        border-radius: 2px;
+        margin-top: .6rem;
+      }
+      .text-center .section-title::after { margin-left: auto; margin-right: auto; }
+
+      .card { border: 0; box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07); }
+      .achievement-number {
+        width: 48px; height: 48px; border-radius: 50%;
+        background: #0d6efd; color: #fff; font-weight: 700;
+        display: flex; align-items: center; justify-content: center;
+        flex-shrink: 0;
+      }
+      .achievement-img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        background-color: #dbe4f0;
+      }
+      blockquote.quote {
+        border-left: 4px solid #0d6efd;
+        padding-left: 1.25rem;
+        font-style: italic;
+      }
+      footer { background: #0b1f3a; color: #cbd5e1; }
+    </style>
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#home">Junot</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects &amp; Achievements</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero / Personal identity -->
+    <header id="home">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7 order-2 order-lg-1 text-center text-lg-start">
+            <p class="text-uppercase fw-semibold mb-2" style="letter-spacing: .15em; opacity: .8;">Personal Identity</p>
+            <h1 class="display-4 fw-bold mb-3">Hi, I'm Junot</h1>
+            <p class="lead mb-4">Junot, future multi-million dollar company owner</p>
+            <p class="mb-4">
+              I'm a 14-year-old in 9th grade. I love playing golf with my dad every week.
+              Right now I'm trying to convince my tastebuds to tolerate Indonesian food.
+            </p>
+            <p class="mb-4">
+              I love yogurt, especially froyo bars. And I'd love to come back to the US because I have lots of family and friends there.
+            </p>
+            <a href="#about" class="btn btn-primary btn-lg me-2">About Me</a>
+            <a href="#contact" class="btn btn-outline-light btn-lg">Contact</a>
+          </div>
+          <div class="col-lg-5 order-1 order-lg-2 text-center">
+            <!-- Hero picture: add the image path in src later -->
+            <img src="WIN_20261105_10_48_12_Pro.jpg" alt="Portrait of Junot" class="hero-img rounded-circle">
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About me -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title accent">My Interests</h5>
+                <p class="card-text">I love golf, playing games and travelling.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title accent">What I'm Learning</h5>
+                <p class="card-text">
+                  I'm currently learning to do extreme sports like skydiving and waterskiing.
+                  I'm also trying to improve my Mandarin skills.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title accent">My Goals</h5>
+                <p class="card-text">
+                  I want to improve my maths and Mandarin, and in the future I want to reach my first million dollars by the age of 20 and open a business.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-lg-8">
+            <h5 class="fw-bold mb-3">My Favorite Quote</h5>
+            <blockquote class="quote">
+              <p class="mb-1">"If we command our wealth, we shall be rich and free. If our wealth commands us, we are poor indeed."</p>
+              <footer class="blockquote-footer mt-1">Edmund Burke</footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects & achievements -->
+    <section id="projects" class="bg-soft">
+      <div class="container">
+        <h2 class="section-title">Projects &amp; Achievements</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100">
+              <!-- Achievement picture: add the image path in src later -->
+              <img src="" alt="Photo of HSK Level 2 achievement" class="card-img-top achievement-img">
+              <div class="card-body d-flex align-items-start gap-3">
+                <div class="achievement-number">1</div>
+                <div>
+                  <h5 class="card-title">HSK Level 2</h5>
+                  <p class="card-text mb-0">Passing the HSK test level 2.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <!-- Achievement picture: add the image path in src later -->
+              <img src="" alt="Photo of 2nd runner up, Indonesian Junior Golf Development Open 2026" class="card-img-top achievement-img">
+              <div class="card-body d-flex align-items-start gap-3">
+                <div class="achievement-number">2</div>
+                <div>
+                  <h5 class="card-title">2nd Runner Up</h5>
+                  <p class="card-text mb-0">Indonesian Junior Golf Development Open, 2026.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <!-- Achievement picture: add the image path in src later -->
+              <img src="" alt="Photo of 3rd runner up, Indonesian Charity Golf Event 2026" class="card-img-top achievement-img">
+              <div class="card-body d-flex align-items-start gap-3">
+                <div class="achievement-number">3</div>
+                <div>
+                  <h5 class="card-title">3rd Runner Up</h5>
+                  <p class="card-text mb-0">Indonesian Charity Golf Event, 2026.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="d-flex justify-content-between mb-1"><span class="fw-semibold">Canva</span><span class="text-muted">Intermediate</span></div>
+            <div class="progress mb-4" style="height: 10px;">
+              <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+
+            <div class="d-flex justify-content-between mb-1"><span class="fw-semibold">Music</span><span class="text-muted">Intermediate</span></div>
+            <div class="progress mb-4" style="height: 10px;">
+              <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+
+            <div class="d-flex justify-content-between mb-1"><span class="fw-semibold">Teamwork</span><span class="text-muted">Confident</span></div>
+            <div class="progress mb-4" style="height: 10px;">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+
+            <div class="d-flex justify-content-between mb-1"><span class="fw-semibold">Public Speaking</span><span class="text-muted">Intermediate</span></div>
+            <div class="progress mb-4" style="height: 10px;">
+              <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="d-flex justify-content-between mb-1"><span class="fw-semibold">English</span><span class="text-muted">Confident</span></div>
+            <div class="progress mb-4" style="height: 10px;">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+
+            <div class="d-flex justify-content-between mb-1"><span class="fw-semibold">Indonesian</span><span class="text-muted">Intermediate</span></div>
+            <div class="progress mb-4" style="height: 10px;">
+              <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+
+            <div class="d-flex justify-content-between mb-1"><span class="fw-semibold">Mandarin</span><span class="text-muted">Beginner</span></div>
+            <div class="progress mb-4" style="height: 10px;">
+              <div class="progress-bar bg-warning" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacts & social -->
+    <section id="contact" class="bg-soft">
+      <div class="container text-center">
+        <h2 class="section-title">Contacts &amp; Social</h2>
+        <p class="mb-4">Want to get in touch? Send me an email.</p>
+        <a href="mailto:Junot.elfabiano.farrand@harapanprestasi.sch.id" class="btn btn-primary btn-lg">
+          Junot.elfabiano.farrand@harapanprestasi.sch.id
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 text-center">
+      <div class="container">
+        <small>&copy; 2026 Junot. All rights reserved.</small>
+      </div>
+    </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
